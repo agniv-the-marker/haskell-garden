@@ -16,5 +16,3 @@ exercises:
 1. [[ox_fp/exercises/1 exercises\|1 exercises]]
 2. [[ox_fp/exercises/2 exercises\|2 exercises]]
 3. 
-
-When drafting up code to follow along or to check exercises, use [[draft.hs]] (or [[draft.py]], or imperitive stuff). Within the code/ox_fp folder are programs that follow along each chapter.
