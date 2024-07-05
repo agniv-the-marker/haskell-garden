@@ -1,435 +1,87 @@
 /* ==========================================================================
-   Variables
-   ========================================================================== */
+Variables
+========================================================================== */
 
 /*
-   Typography
-   ========================================================================== */
+Typography
+========================================================================== */
 
-   $heebo                      : monospace;
-   $gochi-hand                 : monospace;
-   
-   $global-font-family         : $heebo !default;
-   $header-font-family         : $heebo !default;
-   $fancy-font-family          : $gochi-hand !default;
-   $caption-font-family        : $heebo !default;
-   $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
-   
-   /* type scale */
-   $type-size-1                : 2.441em !default;  // ~39.056px
-   $type-size-2                : 1.953em !default;  // ~31.248px
-   $type-size-3                : 1.563em !default;  // ~25.008px
-   $type-size-4                : 1.25em !default;   // ~20px
-   $type-size-5                : 1em !default;      // ~16px
-   $type-size-6                : 0.75em !default;   // ~12px
-   $type-size-7                : 0.6875em !default; // ~11px
-   $type-size-8                : 0.625em !default;  // ~10px
-   
-   
-   /*
-      Colors
-      ========================================================================== */
-   
-   $green                      : mix(#000, #3e7fb1, 15%);
-   $theme-color                : $green;
-   $gray                       : #7a8288 !default;
-   
-   $body-color                 : #fff !default;
-   $background-color           : #e3e0fd !default;
-   $code-background-color      : mix(#fff, $gray, 90%) !default;
-   $blockquote-background-color: mix(#fff, $gray, 90%) !default;
-   $text-color                 : #404040 !default;
-   $border-color               : #b2b2b2 !default;
-   
-   
-   /* links */
-   $link-color                 : $theme-color !default;
-   $link-color-hover           : mix(#fff, $link-color, 40%) !default; 
-   $link-color-visited         : mix(#000, $link-color, 25%) !default;
-   $entry-link-color           : $text-color !default;
-   $entry-link-color-hover     : $theme-color !default;
-   
-   
-   /*
-      Breakpoints
-      ========================================================================== */
-   
-   $x-small                    : 320px !default;
-   $small                      : 600px !default;
-   $medium                     : 768px !default;
-   $medium-wide                : 900px !default;
-   $large                      : 1024px !default;
-   $x-large                    : 1280px !default;
-   $x-x-large                  : 1440px !default;
-   
-   $max-width                  : 625px !default;
-   
-   
-   /*
-      Other
-      ========================================================================== */
-   
-   $border-radius              : 5px !default;
-   $global-transition          : all 0.2s ease-in-out !default;
-   
+$heebo                      : monospace;
+$gochi-hand                 : monospace;
 
-/* ==========================================================================
-   BASE ELEMENTS
-   ========================================================================== */
+$global-font-family         : $heebo !default;
+$header-font-family         : $heebo !default;
+$fancy-font-family          : $gochi-hand !default;
+$caption-font-family        : $heebo !default;
+$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
-   %tab-focus {
-    /* Default*/
-    outline: thin dotted #f89406;
-    /* Webkit*/
-    outline: 5px auto #f89406;
-    outline-offset: -2px;
-  }
-  
-  @mixin clearfix {
-    clear: both;
-  
-    &::after {
-      clear: both;
-      content: "";
-      display: table;
-    }
-  }
-  
-  html {
-    /* sticky footer fix */
-    position: relative;
-    min-height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    color: $text-color;
-    font-family: $global-font-family;
-    line-height: 1.5;
-    color: $text-color;
-  
-    &.overflow--hidden {
-      /* when primary navigation is visible, the content in the background won't scroll */
-      overflow: hidden;
-    }
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 0.5em;
-    line-height: 1.2;
-    font-family: $header-font-family;
-    font-weight: normal;
-  }
-  
-  h1 {
-    margin-top: 0;
-    font-size: $type-size-3;
-  }
-  
-  h2 {
-    font-size: $type-size-3;
-  }
-  
-  h3 {
-    font-size: $type-size-4;
-  }
-  
-  h4 {
-    font-size: $type-size-4;
-  }
-  
-  h5 {
-    font-size: $type-size-4;
-  }
-  
-  h6 {
-    font-size: $type-size-4;
-  }
-  
-  small, .small {
-    font-size: $type-size-7;
-  }
-  
-  p {
-    margin-bottom: 1.3em;
-  }
-  
-  u,
-  ins {
-    text-decoration: none;
-    border-bottom: 1px solid $text-color;
-    a {
-      color: inherit;
-    }
-  }
-  
-  del a {
-    color: inherit;
-  }
-  
-  /* reduce orphans and widows when printing */
-  
-  p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
-    orphans: 3;
-    widows: 3;
-  }
-  
-  /* abbreviations */
-  
-  abbr[title],
-  abbr[data-original-title] {
-    text-decoration: none;
-    cursor: help;
-    border-bottom: 1px dotted $text-color;
-  }
-  
-  /* blockquotes */
-  
-  blockquote {
-    background: $blockquote-background-color;
-    border-radius: 1em;
-    padding: 1em 3em;
-    margin: 1em;
-    position: relative;
-  }
-  
-  blockquote:before {
-    font-family: Georgia, serif;
-    font-style: italic;
-    display: block;
-    content: "\201C";
-    font-size: 7em;
-    position: absolute;
-    left: -0.2em;
-    top: -0.2em;
-    color: #7a7a7a;
-  }
-  
-  blockquote cite {
-    color: #999999;
-    font-size: 0.9em;
-    display: block;
-    margin-top: 5px;
-    text-align: right;
-  }
-   
-  blockquote cite:before {
-    content: "\2014 \2009";
-  }
-  
-  blockquote p:last-child {
-    margin: 0;
-  }
-  
-  /* links */
-  
-  a {
-    text-decoration: underline; // underline links by default
-    &:focus {
-      @extend %tab-focus;
-    }
-  
-    &:hover,
-    &:active {
-      outline: 0;
-    }
-    
-    &:hover { color: $link-color-hover; }
-    &:hover > image { opacity: 0.7; }
-  }
-  
-  /* code */
-  
-  tt, code, kbd, samp, pre {
-    font-family: $monospace;
-  }
-  
-  pre {
-    overflow-x: auto; /* add scrollbars to wide code blocks*/
-  }
-  
-  p > code,
-  a > code,
-  li > code,
-  figcaption > code,
-  td > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    background: $code-background-color;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-  
-    &:before, &:after {
-      letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
-    }
-  }
-  
-  /* horizontal rule */
-  
-  hr {
-    display: block;
-    margin: 1em 0;
-    border: 0;
-    border-top: 1px solid $border-color;
-  }
-  
-  /* lists */
-  
-  ul li,
-  ol li {
-    margin-bottom: 0.5em;
-  }
-  
-  li ul,
-  li ol {
-    margin-top: 0.5em;
-  }
-  
-  /*
-     Media and embeds
-     ========================================================================== */
-  
-  /* Figures and images */
-  
-  figure {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 2em 0;
-  
-    img,
-    iframe,
-    .fluid-width-video-wrapper {
-      margin-bottom: 1em;
-    }
-  
-    img {
-      width: 100%;
-      border-radius: $border-radius;
-      -webkit-transition: $global-transition;
-      transition: $global-transition;
-    }
-  
-    > a {
-      display: block;
-    }
-  
-    &.half {
-      > a,
-      > img {
-        @include breakpoint($small) {
-          width: calc(50% - 0.5em);
-        }
-      }
-  
-      figcaption {
-        width: 100%;
-      }
-    }
-  
-    &.third {
-      > a,
-      > img {
-        @include breakpoint($small) {
-          width: calc(33.3333% - 0.5em);
-        }
-      }
-  
-      figcaption {
-        width: 100%;
-      }
-    }
-  }
-  
-  /* Figure captions */
-  
-  figcaption {
-    margin-bottom: 0.5em;
-    color: mix(#fff, $text-color, 25%);
-    font-family: $caption-font-family;
-    font-size: $type-size-6;
-  
-    a {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 1px solid $border-color;
-      -webkit-transition: $global-transition;
-      transition: $global-transition;
-  
-      &:hover {
-        color: #000;
-        border-bottom-color: #000;
-      }
-    }
-  }
-  
-  
-  /* Fix IE9 SVG bug */
-  
-  svg:not(:root) {
+/* type scale */
+$type-size-1                : 2.441em !default;  // ~39.056px
+$type-size-2                : 1.953em !default;  // ~31.248px
+$type-size-3                : 1.563em !default;  // ~25.008px
+$type-size-4                : 1.25em !default;   // ~20px
+$type-size-5                : 1em !default;      // ~16px
+$type-size-6                : 0.75em !default;   // ~12px
+$type-size-7                : 0.6875em !default; // ~11px
+$type-size-8                : 0.625em !default;  // ~10px
+
+
+/*
+Colors
+========================================================================== */
+
+$green                      : mix(#000, #3e7fb1, 15%);
+$theme-color                : $green;
+$gray                       : #7a8288 !default;
+
+$body-color                 : #fff !default;
+$background-color           : #e3e0fd !default;
+$code-background-color      : mix(#fff, $gray, 90%) !default;
+$blockquote-background-color: mix(#fff, $gray, 90%) !default;
+$text-color                 : #404040 !default;
+$border-color               : #b2b2b2 !default;
+
+
+/* links */
+$link-color                 : $theme-color !default;
+$link-color-hover           : mix(#fff, $link-color, 40%) !default; 
+$link-color-visited         : mix(#000, $link-color, 25%) !default;
+$entry-link-color           : $text-color !default;
+$entry-link-color-hover     : $theme-color !default;
+
+
+/*
+Breakpoints
+========================================================================== */
+
+$x-small                    : 320px !default;
+$small                      : 600px !default;
+$medium                     : 768px !default;
+$medium-wide                : 900px !default;
+$large                      : 1024px !default;
+$x-large                    : 1280px !default;
+$x-x-large                  : 1440px !default;
+
+$max-width                  : 625px !default;
+
+
+/*
+Other
+========================================================================== */
+
+$border-radius              : 5px !default;
+$global-transition          : all 0.2s ease-in-out !default;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
+  color: $text-color;
+
+  &.overflow--hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
-  
-  /*
-     Navigation lists
-     ========================================================================== */
-  
-  /**
-   * Removes margins, padding, and bullet points from navigation lists
-   *
-   * Example usage:
-   * <nav>
-   *    <ul>
-   *      <li><a href="#link-1">Link 1</a></li>
-   *      <li><a href="#link-2">Link 2</a></li>
-   *      <li><a href="#link-3">Link 3</a></li>
-   *    </ul>
-   *  </nav>
-   */
-   
-  nav {
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-  
-    li {
-      list-style: none;
-    }
-  
-    a {
-      text-decoration: none;
-    }
-  
-    /* override white-space for nested lists */
-    ul li,
-    ol li {
-      margin-bottom: 0;
-    }
-  
-    li ul,
-    li ol {
-      margin-top: 0;
-    }
-  }
-  
-  /*
-     Global animation transition
-     ========================================================================== */
-  
-  
-  b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, textarea, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
-  }
-  
-  input, textarea, input[type="submit"] {
-    font-family: $global-font-family;
-  }
-  
+}
