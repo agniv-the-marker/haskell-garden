@@ -7,16 +7,4 @@
         { "handle": "filesystem" },
         { "src": "/(.*)", "status": 404, "dest": "/404" }
       ]
-    "rewrites": [
-        {
-            "source": "/:path",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "haskell.agniv.me"
-                }
-            ],
-            "destination": "/haskell/:path"
-        }
-    ]
 }
