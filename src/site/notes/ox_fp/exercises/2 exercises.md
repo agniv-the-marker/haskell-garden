@@ -3,7 +3,6 @@
 ---
 
 chapter: [[ox_fp/definitions/2 definitions\|2 definitions]]
-[[fp_notes.pdf#page=16&selection=174,0,174,9|fp_notes, page 16]]
 
 *Problem 1.*
 

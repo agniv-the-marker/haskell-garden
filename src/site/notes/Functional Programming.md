@@ -8,4 +8,4 @@ Use [[precursor/installing haskell\|installing haskell]] to install, and check o
 
 To see the specifics:
 
-- Oxford's course material ([[fp_notes.pdf]]) correlates with [[ox_fp/oxford functional programming\|oxford functional programming]]
+- Oxford's course material correlates with [[ox_fp/oxford functional programming\|oxford functional programming]]

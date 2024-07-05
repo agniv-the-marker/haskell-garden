@@ -3,7 +3,6 @@
 ---
 
 chapter: [[ox_fp/functions/1 function and lists\|1 function and lists]]
-[[fp_notes.pdf#page=9&selection=59,0,59,9|fp_notes, page 9]]
 
 *Problem 1.*
 

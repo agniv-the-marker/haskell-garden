@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/ox-fp/oxford-functional-programming/"}
 ---
 
-This utilizes [[fp_notes.pdf]], sent from a friend. Thanks!
+This utilizes course notes, sent from a friend. Thanks!
 
 Table of contents:
 
