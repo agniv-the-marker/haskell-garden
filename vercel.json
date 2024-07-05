@@ -9,14 +9,14 @@
       ]
     "rewrites": [
         {
-          "source": "/:path*",
-          "has": [
-            {
-              "type": "host",
-              "value": "haskell.agniv.me"
-            }
-          ],
-          "destination": "/haskell/:path*"
-    }
-  ]
+            "source": "/:path",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "haskell.agniv.me"
+                }
+            ],
+            "destination": "/haskell/:path"
+        }
+    ]
 }
