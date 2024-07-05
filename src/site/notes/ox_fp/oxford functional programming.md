@@ -4,7 +4,7 @@
 
 This utilizes course notes, sent from a friend. Thanks!
 
-Table of contents:
+table of contents:
 
 1. [[ox_fp/functions/1 function and lists\|1 function and lists]]
 2. [[ox_fp/definitions/2 definitions\|2 definitions]]
