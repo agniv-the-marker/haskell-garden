@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/ox-fp/exercises/1-exercises/"}
 ---
 
-chapter: [[1 function and list[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+chapter: [[ox_fp/functions/1 function and lists\|1 function and lists]]
 
 *Problem 1.*
 
@@ -36,14 +36,14 @@ As such, $F_1 = F_2$ and composition is associative.
 
 *Problem 3.*
 
-Define $+\mkern-10mu+$ as the concat operator. This is associative, which follows from an inductive proof. Consider $as, bs$ to be lists, and induct on the length of $cs$. It is not commutative since $[1, 2] \neq [2, 1]$, and its identity element is equal to the empty list $[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)$ . This does not have a zero element. In this way concatenation over a consistent type forms a free monoid.
+Define $+\mkern-10mu+$ as the concat operator. This is associative, which follows from an inductive proof. Consider $as, bs$ to be lists, and induct on the length of $cs$. It is not commutative since $[1, 2] \neq [2, 1]$, and its identity element is equal to the empty list $[]$ . This does not have a zero element. In this way concatenation over a consistent type forms a free monoid.
 
 *Problem 4.*
 
 ```haskell
 map double [3, 7, 4, 2] = [6, 14, 8, 4]
 map (double.double) [3, 7, 4, 2] = [12, 28, 16, 8]
-map double [fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing) = [fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing).
+map double [] = [].
 
 sum . map double = double . sum -- True, as the integers are a commutative ring
 sum . map sum = sum . concat -- True, assuming type [[Integer]]

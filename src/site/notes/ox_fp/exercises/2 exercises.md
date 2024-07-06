@@ -2,13 +2,13 @@
 {"dg-publish":true,"permalink":"/ox-fp/exercises/2-exercises/"}
 ---
 
-chapter: [[2 definition[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+chapter: [[ox_fp/definitions/2 definitions\|2 definitions]]
 
 *Problem 1.*
 
 ```haskell
 factorial :: Integer -> Integer
-factorial n = product [1..[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)
+factorial n = product [1..n]
 
 choose :: Integer -> Integer -> Integer
 choose n r = factorial n `div` (factorial r * factorial(n-r))
@@ -18,7 +18,7 @@ choose n r
 	| otherwise      = factorial n `div` (factorial r * factorial (n-r))
 
 check :: Integer -> Bool
-check n = sum [choose n r | r <- [0..[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)] == 2^n
+check n = sum [choose n r | r <- [0..n]] == 2^n
 ```
 
 *Problem 2.*

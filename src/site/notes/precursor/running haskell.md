@@ -17,7 +17,7 @@ gchi>
 
 That's really all there is to running it in the terminal! Treat this like a scratchpad. Note the keyword `it`, which will remember the most recent output done within the `ghci` terminal, similar to `Ans` on a normal keyboard. To exit do `ctrl+D`.
 
-To actually do anything interesting with it, we have to write programs, which look like `*.hs`. For the standard [[hello.h[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)], do:
+To actually do anything interesting with it, we have to write programs, which look like `*.hs`. For the standard [[hello.hs]], do:
 
 ```haskell
 main = do
@@ -27,7 +27,7 @@ main = do
   putStrLn ("Please look at my favorite odd numbers: " ++ show (filter odd [10..20]))
 ```
 
-This goes ahead and tells you what a file should look like. You have a main function which is defined as the process of doing some prints. For some conventions, see [[convention[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)].
+This goes ahead and tells you what a file should look like. You have a main function which is defined as the process of doing some prints. For some conventions, see [[precursor/conventions\|conventions]].
 
 To run it (for some reason it doesn't run in vscode), open up your terminal, and do
 
