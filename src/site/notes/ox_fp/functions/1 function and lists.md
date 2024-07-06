@@ -4,12 +4,12 @@
 
 table of contents:
 
-1. [[ox_fp/functions/1.1 programs as functions\|1.1 programs as functions]]
-2. [[ox_fp/functions/1.2 types\|1.2 types]]
+1. [[1.1 programs as function[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+2. [[1.2 type[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
 3. [[ox_fp/functions/1.3 sequences (lists)\|1.3 sequences (lists)]]
-4. [[ox_fp/functions/1.4 script files\|1.4 script files]]
-5. [[ox_fp/functions/1.5 composition of functions\|1.5 composition of functions]]
-6. [[ox_fp/functions/1.6 example most common words in a text\|1.6 example most common words in a text]]
-7. [[ox_fp/functions/1.7 how to read haskell expressions\|1.7 how to read haskell expressions]]
+4. [[1.4 script file[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+5. [[1.5 composition of function[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+6. [[1.6 example most common words in a tex[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
+7. [[1.7 how to read haskell expression[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]
 
-exercises: [[ox_fp/exercises/1 exercises\|1 exercises]]
+exercises: [[1 exercise[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)]

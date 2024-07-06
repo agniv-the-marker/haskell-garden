@@ -3,7 +3,7 @@
 ---
 
 
-First you need to install [GHCup](https://www.haskell.org/ghcup/#) by running:
+First you need to install [GHCu[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)(https://www.haskell.org/ghcup/#) by running:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true } catch { Write-Error $_ }
@@ -17,4 +17,4 @@ Right after this, do
 cabal install hlint
 ```
 
-This will let you do linting. All of this installation might take a while (and open up MinGW x64), so in the meantime look at [[precursor/ide support\|ide support]].
+This will let you do linting. All of this installation might take a while (and open up MinGW x64), so in the meantime look at [[ide suppor[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)].

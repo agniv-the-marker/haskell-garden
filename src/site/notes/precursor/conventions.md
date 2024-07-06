@@ -51,7 +51,7 @@ example n = if n < 100 then " condition met " else " condition not met "
 For concatenation of strings, you can do the following:
 
 ```haskell
-concat ['a', 'b', ..] == 'a' ++ 'b' ++ ..
+concat ['a', 'b', .[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing) == 'a' ++ 'b' ++ ..
 ```
 
-For local setting of variables, see [[ox_fp/definitions/2.5 local definitions let expressions and where clauses\|2.5 local definitions let expressions and where clauses]].
+For local setting of variables, see [[2.5 local definitions let expressions and where clause[fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)].
