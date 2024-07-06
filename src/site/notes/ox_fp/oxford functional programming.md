@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/ox-fp/oxford-functional-programming/"}
 ---
 
-This utilizes course notes [fp_notes.pdf](https://github.com/agniv-the-marker/functional-programming/blob/main/ox_fp/fp_notes.pdf), sent from Malaika. Thanks!
+This utilizes course notes [fp_notes.pdf](https://haskell.agniv.me/assets/fp_notes.pdf), sent from Malaika. Thanks!
 
 table of contents:
 
