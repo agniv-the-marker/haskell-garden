@@ -16,6 +16,7 @@
     "filesToAdd": [
         "src/site/styles/custom-style.scss",
         ".env",
+        "src/site/assets/fp_notes.pdf",
         "src/site/favicon.svg",
         "src/site/img/default-note-icon.svg",
         "src/site/img/tree-1.svg",
