@@ -4,6 +4,6 @@
 
 table of contents:
 
-1. 
+1. [[ox_fp/expressions/3.1 well formed well typed expressions\|3.1 well formed well typed expressions]]
 
 exercises: 

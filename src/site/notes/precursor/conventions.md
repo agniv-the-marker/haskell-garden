@@ -42,7 +42,7 @@ parity n =
  | n == 2    = 0
  | n == 3    = 1
  ...
- | otherwise = what the fu
+ | otherwise = ???
 
 example :: Int -> String
 example n = if n < 100 then " condition met " else " condition not met "
