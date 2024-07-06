@@ -17,7 +17,7 @@ gchi>
 
 That's really all there is to running it in the terminal! Treat this like a scratchpad. Note the keyword `it`, which will remember the most recent output done within the `ghci` terminal, similar to `Ans` on a normal keyboard. To exit do `ctrl+D`.
 
-To actually do anything interesting with it, we have to write programs, which look like `*.hs`. For the standard [[hello.hs]], do:
+To actually do anything interesting with it, we have to write programs, which look like `*.hs`. For the standard [hello.hs](https://github.com/agniv-the-marker/functional-programming/blob/main/code/hello.hs), do:
 
 ```haskell
 main = do

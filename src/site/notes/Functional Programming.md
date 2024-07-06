@@ -6,6 +6,8 @@ This garden will contain my notes on Haskell, following some of the [course mate
 
 Use [[precursor/installing haskell\|installing haskell]] to install, and check out [[precursor/ide support\|ide support]] for vs-code specific extensions. Then you should check out [[precursor/running haskell\|running haskell]] for, well, obvious reasons. The vs-code extension needs vs-code to be reloaded so it can do `runghc`, because this skips over any complaints from the window's defender.
 
+And yes, the site's favicon [3d_haskell.svg](https://github.com/agniv-the-marker/functional-programming/blob/main/3d_haskell.svg) is a poorly ai-generated rendition of a 3d logo for haskell :P.
+
 To see the specifics:
 
-- Oxford's course material ([fp_notes.pdf](https://drive.google.com/file/d/1O1Oq5g9DEug96MbidHu_iYOwaDCYYNa2/view?usp=sharing)) correlates with [[ox_fp/oxford functional programming\|oxford functional programming]]
+- Oxford's course material ([fp_notes.pdf](https://github.com/agniv-the-marker/functional-programming/blob/main/ox_fp/fp_notes.pdf)) correlates with [[ox_fp/oxford functional programming\|oxford functional programming]].
