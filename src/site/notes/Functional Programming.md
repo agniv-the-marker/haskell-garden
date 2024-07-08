@@ -10,4 +10,4 @@ And yes, the site's favicon [3d_haskell.svg](https://github.com/agniv-the-marker
 
 To see the specifics:
 
-- Oxford's course material ([fp_notes.pdf](https://haskell.agniv.me/assets/fp_notes.pdf)) correlates with [[ox_fp/oxford functional programming\|oxford functional programming]].
+- Oxford's course material (course notes) correlates with [[ox_fp/oxford functional programming\|oxford functional programming]].
