@@ -12,5 +12,3 @@ table of contents:
 4. [[ox_fp/expressions/3.4 polymorphic types\|3.4 polymorphic types]]
 5. [[ox_fp/expressions/3.5 selectors, discriminators, deconstructors\|3.5 selectors, discriminators, deconstructors]]
 6. [[ox_fp/expressions/3.6 type inference\|3.6 type inference]]
-
-exercises: [[ox_fp/exercises/3 exercises\|3 exercises]]
